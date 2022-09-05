@@ -1,0 +1,54 @@
+@import "custom";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$custom-spacers: (
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 6.25,
+);
+
+$spacers: map-merge($spacers, $custom-spacers);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Utility classes
+.full-height {
+  min-height: 100vh;
+}
+
+// img {
+//     width: 100%;
+//     height: auto;
+// }
+
+
+//header section 
+.top-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+// landing section
+.landing {
+  background-image: url("../../images/desktop/image-hero.jpg");
+  background-size: cover;
+}
+
+/** About us section styles */
+.about-us {
+  position: relative;
+}
+
+.img-container {
+    flex: 70%;
+}
+
+.about-intro {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -1,59 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- My custom css file -->
+  <link rel="stylesheet" href="./public/css/styles.css">
 </head>
+
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  <header class="top-nav">
+    <nav class="navbar navbar-expand-sm pt-5">
+      <div class="container">
+        <a href="javascript:void(0)">
+          <img src="./images/logo.svg" alt="website logo">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#customNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white ps-4" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ps-4" href="#careers">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ps-4" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ps-4" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white ps-4" href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="full-height landing d-flex align-items-center">
+      <div class="container">
+        <div class="w-50 border border-3 p-4">
+          <h1 class="display-1 text-white text-uppercase">Immersive experiences that deliver</h1>
+        </div>
+      </div>
+    </section>
+    <section class="full-height about-us py-9" aria-labelledby="about-us">
+      <div class="container">
+        <div class="img-container">
+          <img class="img-fluid" width="800" height="700" src="./images/desktop/image-interactive.jpg" alt="">
+        </div>
+        <div class="w-50 bg-white p-9 about-intro">
+          <h2 id="about-us" class=" display-4 text-uppercase">The leader in interactive VR</h2>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual reality
+            projects for some of the best companies around the globe. Our award-winning
+            creations have transformed businesses through digital experiences that bind
+            to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="full-height">
+      <div class="container">
+        <header class="d-flex justify-content-between">
+          <h2>Our creations</h2>
+          <button type="button" class="border border-3 border-dark rounded-0 bg-white text-uppercase small px-4">See
+            all</button>
+        </header>
+        <div class="col d-flex flex-wrap justify-content-between">
+          <div class="product-item">
+            <img src="./images/desktop/image-deep-earth.jpg" alt="earth image">
+            <h4>Deep earth</h4>
+          </div>
+          <div class="product-item">
+            <img src="./images/desktop/image-night-arcade.jpg" alt="night arcade image">
+            <h4>Night arcade</h4>
+          </div>
+          <div class="product-item">
+            <img src="./images/desktop/image-soccer-team.jpg" alt="Soccer player image">
+            <h4>Soccer team VR</h4>
+          </div>
+          <div class="product-item">
+            <img src="./images/desktop/image-grid.jpg" alt="car image">
+            <h4>The grid</h4>
+          </div>
+          <div class="product-item">
+            <img src="./images/desktop/image-from-above.jpg" alt="earth image">
+            <h4>From up above VR</h4>
+          </div>
+          <div class="product-item">
+            <img src="./images/desktop/image-pocket-borealis.jpg" alt="night arcade image">
+            <h4>Pocket borealis</h4>
+          </div>
+          <div class="product-item">
+            <img src="./images/desktop/image-curiosity.jpg" alt="Soccer player image">
+            <h4>The curiosity</h4>
+          </div>
+          <div class="product-item">
+            <img src="./images/desktop/image-fisheye.jpg" alt="car image">
+            <h4>Make it fisheye</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-black py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <img src="./images/logo.svg" alt="website logo">
+        <nav>
+          <div class="row">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#about" class="nav-link text-white">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#careers" class="nav-link text-white">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a href="#events" class="nav-link text-white">Events</a>
+              </li>
+              <li class="nav-item">
+                <a href="#products" class="nav-link text-white">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="#support" class="nav-link text-white">Support</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <ul class=" nav list-unstyled">
+          <li class="nav-item px-2">
+            <a href="javascript:void(0)">
+              <img src="./images/icon-facebook.svg" alt="facebook icon">
+            </a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="javascript:void(0)">
+              <img src="./images/icon-twitter.svg" alt="twitter icon">
+            </a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="javascript:void(0)">
+              <img src="./images/icon-pinterest.svg" alt="pinterest icon">
+            </a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="javascript:void(0)">
+              <img src="./images/icon-instagram.svg" alt="instagram icon">
+            </a>
+          </li>
+        </ul>
+        <p class="text-white-50 small">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-  Immersive experiences that deliver
 
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
