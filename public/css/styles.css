@@ -1,4 +1,18 @@
 @charset "UTF-8";
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Josefin Sans";
+}
+
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -12205,24 +12219,29 @@ textarea.form-control-lg {
   left: 0;
 }
 
+.title-wrapper {
+  max-width: min(700px, 95%);
+}
+
+.page-title {
+  line-height: 1;
+  font-weight: 100;
+}
+
 .landing {
-  background-image: url("../../images/desktop/image-hero.jpg");
+  background-image: url("../../images/mobile/image-hero.jpg");
   background-size: cover;
 }
 
+@media screen and (min-width: 50em) {
+  .landing {
+    background-image: url("../../images/desktop/image-hero.jpg");
+    background-size: cover;
+  }
+}
 /** About us section styles */
 .about-us {
   position: relative;
-}
-
-.img-container {
-  flex: 70%;
-}
-
-.about-intro {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

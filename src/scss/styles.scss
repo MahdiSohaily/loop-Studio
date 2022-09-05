@@ -24,18 +24,33 @@ $spacers: map-merge($spacers, $custom-spacers);
 //     height: auto;
 // }
 
+//header section
+.top-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
 
-//header section 
-.top-nav{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+.title-wrapper {
+  max-width: min(700px, 95%);
+}
+
+.page-title {
+  line-height: 1;
+  font-weight: 100;
 }
 // landing section
 .landing {
-  background-image: url("../../images/desktop/image-hero.jpg");
+  background-image: url("../../images/mobile/image-hero.jpg");
   background-size: cover;
+}
+
+@media screen and (min-width: 50em) {
+  .landing {
+    background-image: url("../../images/desktop/image-hero.jpg");
+    background-size: cover;
+  }
 }
 
 /** About us section styles */
@@ -44,11 +59,7 @@ $spacers: map-merge($spacers, $custom-spacers);
 }
 
 .img-container {
-    flex: 70%;
 }
 
 .about-intro {
-    position: absolute;
-    bottom: 0;
-    right: 0;
 }

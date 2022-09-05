@@ -28,9 +28,9 @@
           <img src="./images/logo.svg" alt="website logo">
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#customNav">
-          <span class="navbar-toggler-icon"></span>
+          <img src="./images/icon-hamburger.svg" alt="">
         </button>
-        <div class="collapse navbar-collapse justify-content-end">
+        <div id="customNav" class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link text-white ps-4" href="#about">About</a>
@@ -55,8 +55,8 @@
   <main>
     <section class="full-height landing d-flex align-items-center">
       <div class="container">
-        <div class="w-50 border border-3 p-4">
-          <h1 class="display-1 text-white text-uppercase">Immersive experiences that deliver</h1>
+        <div class="title-wrapper border border-3 p-4 mx-auto mx-md-0">
+          <h1 class="display-1 text-white text-uppercase page-title">Immersive experiences that deliver</h1>
         </div>
       </div>
     </section>
@@ -65,9 +65,9 @@
         <div class="img-container">
           <img class="img-fluid" width="800" height="700" src="./images/desktop/image-interactive.jpg" alt="">
         </div>
-        <div class="w-50 bg-white p-9 about-intro">
-          <h2 id="about-us" class=" display-4 text-uppercase">The leader in interactive VR</h2>
-          <p>
+        <div class="w-lg-50 pt-5  p-lg-9 about-intro bg-white">
+          <h2 id="about-us" class=" display-4 text-uppercase text-center">The leader in interactive VR</h2>
+          <p class="text-center text-muted px-5">
             Founded in 2011, Loopstudios has been producing world-class virtual reality
             projects for some of the best companies around the globe. Our award-winning
             creations have transformed businesses through digital experiences that bind
@@ -122,59 +122,59 @@
   </main>
   <footer class="bg-black py-5">
     <div class="container">
-      <div class="d-flex justify-content-between">
-        <img src="./images/logo.svg" alt="website logo">
-        <nav>
-          <div class="row">
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="#about" class="nav-link text-white">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#careers" class="nav-link text-white">Careers</a>
-              </li>
-              <li class="nav-item">
-                <a href="#events" class="nav-link text-white">Events</a>
-              </li>
-              <li class="nav-item">
-                <a href="#products" class="nav-link text-white">Products</a>
-              </li>
-              <li class="nav-item">
-                <a href="#support" class="nav-link text-white">Support</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="d-flex justify-content-between align-items-center mt-3">
-        <ul class=" nav list-unstyled">
-          <li class="nav-item px-2">
-            <a href="javascript:void(0)">
-              <img src="./images/icon-facebook.svg" alt="facebook icon">
-            </a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="javascript:void(0)">
-              <img src="./images/icon-twitter.svg" alt="twitter icon">
-            </a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="javascript:void(0)">
-              <img src="./images/icon-pinterest.svg" alt="pinterest icon">
-            </a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="javascript:void(0)">
-              <img src="./images/icon-instagram.svg" alt="instagram icon">
-            </a>
-          </li>
-        </ul>
-        <p class="text-white-50 small">© 2021 Loopstudios. All rights reserved.</p>
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="./images/logo.svg" alt="website logo">
+          <nav>
+            <div class="row">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#about" class="nav-link text-white">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#careers" class="nav-link text-white">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#events" class="nav-link text-white">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#products" class="nav-link text-white">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#support" class="nav-link text-white">Support</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-sm-6 text-end">
+          <ul class=" nav list-unstyled justify-content-end">
+            <li class="nav-item px-2">
+              <a href="javascript:void(0)">
+                <img src="./images/icon-facebook.svg" alt="facebook icon">
+              </a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="javascript:void(0)">
+                <img src="./images/icon-twitter.svg" alt="twitter icon">
+              </a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="javascript:void(0)">
+                <img src="./images/icon-pinterest.svg" alt="pinterest icon">
+              </a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="javascript:void(0)">
+                <img src="./images/icon-instagram.svg" alt="instagram icon">
+              </a>
+            </li>
+          </ul>
+          <p class="text-white-50 small">© 2021 Loopstudios. All rights reserved.</p>
+        </div>
       </div>
     </div>
   </footer>
-
-
 </body>
 
 </html>
