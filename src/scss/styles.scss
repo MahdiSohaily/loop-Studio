@@ -73,3 +73,11 @@ $theme-colors: (
     right: 0;
   }
 }
+
+
+// creations category styles
+
+.creations-cat {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

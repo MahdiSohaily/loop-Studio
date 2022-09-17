@@ -11740,5 +11740,9 @@ textarea.form-control-lg {
     right: 0;
   }
 }
+.creations-cat {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
 /*# sourceMappingURL=styles.css.map */
