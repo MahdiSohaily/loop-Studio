@@ -53,21 +53,25 @@
     </nav>
   </header>
   <main>
-    <section class="full-height landing d-flex align-items-center">
+    <section aria-labelledby="landing-title" class="full-height landing d-flex align-items-center">
       <div class="container">
         <div class="title-wrapper border border-3 p-4 mx-auto mx-md-0">
-          <h1 class="display-1 text-white text-uppercase page-title">Immersive experiences that deliver</h1>
+          <h1 id="landing-title" class="display-1 text-white text-uppercase page-title">Immersive experiences that deliver</h1>
         </div>
       </div>
     </section>
     <section class="full-height about-us py-9" aria-labelledby="about-us">
-      <div class="container">
+      <div class="container position-relative">
         <div class="img-container">
-          <img class="img-fluid" width="800" height="700" src="./images/desktop/image-interactive.jpg" alt="">
+          <picture>
+            <source media="(min-width: 40em)" srcset="./images/desktop/image-interactive.jpg">
+            <source media="(max-width: 40em)" srcset="./images/mobile/image-interactive.jpg">
+            <img class="img-fluid" width="800" height="700" src="./images/mobile/image-interactive.jpg" alt="man using var">
+          </picture>
         </div>
-        <div class="w-lg-50 pt-5  p-lg-9 about-intro bg-white">
-          <h2 id="about-us" class=" display-4 text-uppercase text-center">The leader in interactive VR</h2>
-          <p class="text-center text-muted px-5">
+        <div class="pt-6 px-7  pt-lg-6 about-intro bg-white ">
+          <h2 id="about-us" class=" display-4 text-uppercase pb-2">The leader in interactive VR</h2>
+          <p class="text-muted mb-0">
             Founded in 2011, Loopstudios has been producing world-class virtual reality
             projects for some of the best companies around the globe. Our award-winning
             creations have transformed businesses through digital experiences that bind
@@ -78,10 +82,9 @@
     </section>
     <section class="full-height">
       <div class="container">
-        <header class="d-flex justify-content-between">
-          <h2>Our creations</h2>
-          <button type="button" class="border border-3 border-dark rounded-0 bg-white text-uppercase small px-4">See
-            all</button>
+        <header class="d-flex justify-content-between mb-7">
+          <h2 class="display-6 text-uppercase">Our creations</h2>
+          <button type="button" class=" text-uppercase bg-white">See all</button>
         </header>
         <div class="col d-flex flex-wrap justify-content-between">
           <div class="product-item">
