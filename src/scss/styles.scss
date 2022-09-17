@@ -83,8 +83,18 @@ $theme-colors: (
   gap: 1.2rem;
 }
 
+.cat-title {
+  font-size: 32px;
+}
+
 .product-item {
   position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.485));
 }
 
 .product-item img{
@@ -95,8 +105,8 @@ $theme-colors: (
 
 .cat-title {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 10px;
+  left: 30px;
 }
 
 @media screen and (min-width: 50em) {
@@ -104,5 +114,17 @@ $theme-colors: (
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.2rem;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.485));
+  }
+
+  .cat-title {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
   }
 }
