@@ -11789,5 +11789,8 @@ textarea.form-control-lg {
     left: 30px;
   }
 }
+.footer-nav {
+  list-style-type: none;
+}
 
 /*# sourceMappingURL=styles.css.map */
