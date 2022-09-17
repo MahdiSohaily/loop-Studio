@@ -11730,7 +11730,7 @@ textarea.form-control-lg {
 
 .about-intro {
   position: static;
-  max-width: min(680px, 95%);
+  max-width: min(680px, 100%);
 }
 
 @media screen and (min-width: 50em) {
