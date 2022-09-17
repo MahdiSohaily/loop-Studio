@@ -79,5 +79,30 @@ $theme-colors: (
 
 .creations-cat {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.2rem;
+}
+
+.product-item {
+  position: relative;
+}
+
+.product-item img{
+  width: 100%;
+  height: auto;
+  object-fit: covers;
+}
+
+.cat-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+@media screen and (min-width: 50em) {
+  .creations-cat {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
 }
