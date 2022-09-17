@@ -1,7 +1,7 @@
-@import "custom";
+@import 'custom';
 
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
 
 $custom-spacers: (
   6: $spacer * 4,
@@ -12,17 +12,17 @@ $custom-spacers: (
 
 $spacers: map-merge($spacers, $custom-spacers);
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+$theme-colors: (
+  'dark-gray': hsl(0, 0%, 55%),
+  'dark-gray-xl': hsl(0, 0%, 41%),
+);
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 // Utility classes
 .full-height {
   min-height: 100vh;
 }
-
-// img {
-//     width: 100%;
-//     height: auto;
-// }
 
 //header section
 .top-nav {
@@ -42,13 +42,13 @@ $spacers: map-merge($spacers, $custom-spacers);
 }
 // landing section
 .landing {
-  background-image: url("../../images/mobile/image-hero.jpg");
+  background-image: url('../../images/mobile/image-hero.jpg');
   background-size: cover;
 }
 
 @media screen and (min-width: 50em) {
   .landing {
-    background-image: url("../../images/desktop/image-hero.jpg");
+    background-image: url('../../images/desktop/image-hero.jpg');
     background-size: cover;
   }
 }
@@ -62,4 +62,14 @@ $spacers: map-merge($spacers, $custom-spacers);
 }
 
 .about-intro {
+  position: static;
+  max-width: min(680px, 95%);
+}
+
+@media screen and (min-width: 50em) {
+  .about-intro {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
