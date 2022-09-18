@@ -1,4 +1,4 @@
-# Frontend Mentor - Testimonials grid section solution
+# Frontend Mentor - Loop Studio Landing page
 
 This is a solution to the [Loop Studio Landing page](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
