@@ -148,11 +148,6 @@ $theme-colors: (
   gap: 2rem;
 }
 
-.end {
-  justify-content: end;
-  align-items: flex-end !important;
-}
-
 @media screen and (min-width: 50em) {
   .footer-align {
     justify-content: flex-start;
@@ -161,5 +156,10 @@ $theme-colors: (
 
   .footer-nav {
     flex-direction: row;
+  }
+
+  .end {
+    justify-content: end;
+    align-items: flex-end !important;
   }
 }
