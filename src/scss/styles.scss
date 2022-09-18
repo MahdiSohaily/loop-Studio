@@ -38,9 +38,18 @@ $theme-colors: (
   background-color: black;
 }
 
-.customNav {
+.open {
   position: absolute;
   top: 200px;
+}
+
+.customNav {
+  display: none;
+}
+
+.toggle {
+  cursor: pointer;
+  display: block;
 }
 
 // landing section styles
@@ -62,6 +71,14 @@ $theme-colors: (
   .landing {
     background-image: url('../../images/desktop/image-hero.jpg');
     background-size: cover;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .customNav {
+    display: block;
   }
 }
 
