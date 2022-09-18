@@ -131,7 +131,35 @@ $theme-colors: (
 
 
 // footer section styles 
+.footer-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 .footer-nav {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.end {
+  justify-content: end;
+  align-items: flex-end !important;
+}
+
+@media screen and (min-width: 50em) {
+  .footer-align {
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+  }
 }
