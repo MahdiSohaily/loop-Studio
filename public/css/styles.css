@@ -11798,12 +11798,13 @@ textarea.form-control-lg {
 }
 
 .footer-nav {
+  text-align: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media screen and (min-width: 50em) {
@@ -11813,6 +11814,8 @@ textarea.form-control-lg {
   }
   .footer-nav {
     flex-direction: row;
+    gap: 2rem;
+    text-align: left;
   }
   .end {
     justify-content: end;
