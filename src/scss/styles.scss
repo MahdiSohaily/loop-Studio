@@ -38,13 +38,14 @@ $theme-colors: (
   background-color: black;
 }
 
-.open {
-  position: absolute;
-  top: 200px;
-}
-
 .customNav {
   display: none;
+}
+
+.open {
+  position: absolute;
+  display: block !important;
+  top: 200px;
 }
 
 .toggle {

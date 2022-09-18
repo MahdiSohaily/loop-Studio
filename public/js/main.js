@@ -1,7 +1,12 @@
 const btn = document.querySelector('.toggle');
-const customNav = document.getElementById('#customNav');
+const customNav = document.querySelector('.customNav');
 const top_nav = document.querySelector('.top-nav');
 
 btn.addEventListener('click', (event) => {
-    console.log(event.target.src)
+    const item = event.target;
+    item.classList.toggle('show');
+    if(item.classList.contains('show')) {
+        customNav.classList.add('open');
+        top_nav.classList.add('mob-nav');
+    }
 })
