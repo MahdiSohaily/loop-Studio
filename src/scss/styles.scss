@@ -30,8 +30,20 @@ $theme-colors: (
   top: 0;
   right: 0;
   left: 0;
+  z-index: 2;
 }
 
+.mob-nav {
+  bottom: 0;
+  background-color: black;
+}
+
+.customNav {
+  position: absolute;
+  top: 200px;
+}
+
+// landing section styles
 .title-wrapper {
   max-width: min(700px, 95%);
 }
@@ -74,7 +86,6 @@ $theme-colors: (
   }
 }
 
-
 // creations category styles
 
 .creations-cat {
@@ -97,7 +108,7 @@ $theme-colors: (
   background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.485));
 }
 
-.product-item img{
+.product-item img {
   width: 100%;
   height: auto;
   object-fit: covers;
@@ -119,7 +130,11 @@ $theme-colors: (
   .overlay {
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.485));
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.485)
+    );
   }
 
   .cat-title {
@@ -129,8 +144,7 @@ $theme-colors: (
   }
 }
 
-
-// footer section styles 
+// footer section styles
 .footer-align {
   display: flex;
   flex-direction: column;
