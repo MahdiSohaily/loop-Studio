@@ -15,3 +15,12 @@ btn.addEventListener('click', (event) => {
     top_nav.classList.remove('mob-nav');
   }
 });
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    btn.classList.remove('show');
+    btn.src = './images/icon-hamburger.svg';
+    customNav.classList.remove('open');
+    top_nav.classList.remove('mob-nav');
+  }
+});
