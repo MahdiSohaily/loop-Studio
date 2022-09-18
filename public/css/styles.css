@@ -2,8 +2,8 @@
 h1, .h1,
 h2,
 .h2,
-h4,
-.h4 {
+h3,
+.h3 {
   font-family: "Josefin Sans";
 }
 
@@ -95,7 +95,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
- h4, .h4, h2, .h2, h1, .h1 {
+ h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -120,12 +120,12 @@ h2, .h2 {
   }
 }
 
-h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
 }
 @media (min-width: 1200px) {
-  h4, .h4 {
-    font-size: 1.5rem;
+  h3, .h3 {
+    font-size: 1.75rem;
   }
 }
 
@@ -661,7 +661,7 @@ svg {
 }
 
 .cat-title {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .product-item {
